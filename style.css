@@ -1192,7 +1192,7 @@ body {
 }
 
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1600px) {
     .logo img {
         width: 12rem;
     }
