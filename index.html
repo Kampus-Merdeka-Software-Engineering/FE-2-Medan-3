@@ -284,18 +284,18 @@
                         <div class="booking-phone">
                             <h2>Phone Number</h2>
                             <label for="phone_number">
-                                <input id="phone_number" type="tel" name="phone_number"required>
+                                <input id="phone_number" type="tel" name="phone_number" required>
                                 <span class="text-error"></span>
                             </label>
                         </div>
                         <div class="booking-select">
                             <div class="booking-departure">
                                 <h3>City</h3>
-                                <select name="CityId"  id="collectCity" ></select>
+                                <select name="CityId" id="collectCity"></select>
                             </div>
                             <div class="booking-destination">
                                 <h3>Destination</h3>
-                                <select id="collectDestination" name="DestinationId" disabled >
+                                <select id="collectDestination" name="DestinationId" disabled required>
                                     <option disabled selected>Choose Destination</option>
                                 </select>
                             </div>
@@ -305,7 +305,7 @@
                             </div>
                             <div class="booking-passanger">
                                 <h3>Passanger</h3>
-                                <select name="Passanger" id="passanger" >
+                                <select name="Passanger" id="passanger" required>
                                     <option disabled selected>Choose Passanger</option>
                                     <option value="1">1 People</option>
                                     <option value="2">2 People</option>
@@ -320,8 +320,7 @@
                     <div class="booking-transportation">
                             <h2>Transportation</h2>
                             <p>Choose Transportation</p>
-                            <div class="booking-choose">
-                            </div>
+                            <div class="booking-choose"></div>
                             <button class="booking-button" type="submit">Booking</button>
                     </div>
                     </form>
@@ -415,7 +414,6 @@
                             <label for="field1">
                                 <h2>Message</h2>
                                 <textarea name="komentar1" id="yourMessage" name="yourMessage" placeholder="Type your answer here..." required></textarea>
-                                
                                 <span class="text-error"></span>
                             </label>
                             <h2>Message</h2>
