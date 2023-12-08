@@ -1,0 +1,1497 @@
+*{
+    box-sizing: border-box!important;
+}
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    background-color: white;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+/* Preloader Start */
+#loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 100;
+}
+#loader div{
+    background: #f42f25;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    display: inline-block;
+    transform-origin: 50% 0;
+    animation: bounce 2s ease-in-out infinite;
+}
+#loader div:nth-child(2){
+    background: #f49725;
+    animation-delay: 0.1s;
+}
+#loader div:nth-child(3){ 
+    background: #255ff4; 
+    animation-delay: 0.2s;
+}
+#loader div:nth-child(4){ 
+    background: #9725f4; 
+    animation-delay: 0.3s;
+}
+#afterLoad{
+    display: none;
+    width: 100vw;
+    overflow-x: hidden;
+}
+@keyframes bounce{
+    0%,5%,95%,100%{ transform: translateY(0) scaleY(1); }
+    16.7%{ transform: translateY(0) scaleY(6); }
+    28.3%,38.3%{ transform: translateY(5.25em) scaleY(1); }
+    50%{ transform: translateY(2.625em) scaleY(4.5); }
+    61.7%,71.7%{ transform: translateY(2.625em) scaleY(1); }
+    83.3%{ transform: translateY(0) scaleY(4.5); }
+}
+/* Preloader End */
+
+
+/* Navbar Start */
+.navbar {
+    padding: 0.3125rem;
+
+}
+
+.logo {
+    text-align: center;
+    padding-top: -40px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.navbar li {
+    display: inline;
+
+}
+
+.navbar a {
+    font-size: 1,375rem;
+    color: #0059C7;
+    text-decoration: none;
+    padding: 0.625rem 1.25rem;
+}
+
+.navbar ul li a:hover {
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #ffd500;
+}
+
+.navbar-icon {
+    font-size: 24px;
+    display: none;
+}
+
+/* Navbar End */
+
+/* Hero Start */
+#home {
+    width: 100%;
+    height: 100%;
+}
+
+.parent-1 {
+    display: flex;
+    margin: 2rem 10rem 10rem 12rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1-paragraf3 {
+    color: #0059C7;
+    width: 100%;
+    font-family: Poppins;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    line-height: 7rem; /* 100% */
+}
+
+.p1-div2 img {
+    margin-top: 3rem;
+    width: 45rem;
+}
+
+.div1-paragraf4 {
+    color: #0059C7;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: justify;
+    margin-top: -50px;
+}
+
+/* Button Start */
+.div1-button2 {
+    width: 12.5rem;
+    font-family: Poppins;
+    height: 3.6875rem;
+    border-radius: 10px;
+    border:none;
+    background: #0059C7;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}
+
+.div1-button3 {
+    width: 15rem;
+    font-family: Poppins;
+    height: 59px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: rgb(255, 213, 0);
+    border: none;
+    color: #0059C7;
+}
+
+.div1-button2:hover {
+    background-color: #004dac;
+    color: white;
+}
+
+.div1-button3:hover {
+    background-color: rgb(235, 196, 3);
+    color: #0059C7;
+}
+/* Hero End */
+
+
+/* About Us Start */
+#about-us {
+    width: 100%;
+    height: 100%;
+    background-color: #0059C7;
+}
+
+.parent-2 {
+    display: flex;
+    margin: 0px 10rem 0 10rem;
+}
+
+.div1-parrentbutton {
+    display: flex;
+}
+
+.p2-div2 {
+    display: inline-block;
+}
+
+
+.div2-paragraf4 {
+    color: white;
+    font-family: Poppins;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    line-height: 4.375rem; /* 100% */
+    margin-top: 143px;
+}
+
+.p2-div1 img {
+    width: 50rem;
+    height: 50rem;
+}
+
+.div2-paragraf5 {
+    color: white;
+    font-family: Poppins;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: justify;
+    margin-top: -36px;
+}
+
+/* Button Start */
+
+.div2-button3 {
+    width: 12.5rem;
+    font-family: Poppins;
+    height: 3.6875rem;
+    border-radius: 10px;
+    background-color: #0059C7;
+    margin-bottom: 6.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(255, 213, 0);
+    border: none;
+    color: #0059C7;
+}
+
+.div2-button4 {
+    width: 15rem;
+    font-family: Poppins;
+    height: 59px;
+    border-radius: 10px;
+    color: #0059C7;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.div2-button3:hover {
+    background-color: rgb(235, 196, 3);
+    color: #0059C7;
+}
+
+.div2-button4:hover {
+    background-color: rgb(207, 207, 207);
+    color: #0059C7;
+}
+
+/* About End */
+
+
+/* Our Team Card Start */
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.ourteam-paragraf-1 {
+    color: #0059C7;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.ourteam-paragraf-2 {
+    color: var(--Primary-Color, #0059C7);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    margin-top: -50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ourteam-card {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 20rem;  
+}
+
+/* Card Name Jody */
+.ourteam-card1 {
+    padding: 20px;
+    width: 302px;
+    height: 294px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+.ourteam-card1:hover, .ourteam-card2:hover, .ourteam-card3:hover, .ourteam-card4:hover, .ourteam-card5:hover, .ourteam-card6:hover  {
+    border: 2px solid #0059C7;
+}
+
+
+/* Card Name Annisa */
+.ourteam-card2 {
+    padding: 20px;
+    width: 302px;
+    height: 294px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+/* Card Name Bela */
+.ourteam-card3 {
+    padding: 20px;
+    width: 302px;
+    height: 294px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+/* Card Name Avrilliyah */
+.ourteam-card4 {
+    padding: 20px;
+    width: 302px;
+    height: 294px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+/* Card Name Irfan */
+.ourteam-card5 {
+    padding: 20px;
+    width: 302px;
+    height: 294px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+/* Card Name Sepia */
+.ourteam-card6 {
+    padding: 20px;
+    width: 302px;
+    height: 294px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+.ourteam-card1 img, .ourteam-card2 img, .ourteam-card3 img, .ourteam-card4 img, .ourteam-card5 img, .ourteam-card6 img {
+    width: 50%;
+    margin-top: 15px;
+}
+
+.ourteam-card-body, .ourteam-card-body-2, .ourteam-card-body-3, .ourteam-card-body-4, .ourteam-card-body-5, .ourteam-card-body-6 {
+    margin-top: -15px;
+}
+
+.ourteam-card-body h3, .ourteam-card-body-2 h3, .ourteam-card-body-3 h3, .ourteam-card-body-4 h3, .ourteam-card-body-5 h3, .ourteam-card-body-6 h3{
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.ourteam-card-body p, .ourteam-card-body-2 p, .ourteam-card-body-3 p, .ourteam-card-body-4 p, .ourteam-card-body-5 p, .ourteam-card-body-6 p {
+    color: #494848;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -30px;
+}
+
+
+.ourteam-card-medsos a, .ourteam-card-medsos-2 a, .ourteam-card-medsos-3 a, .ourteam-card-medsos-4 a, .ourteam-card-medsos-5 a, .ourteam-card-medsos-6 a {
+    text-decoration: none;
+}
+
+/* Our Service Start */
+.os-container {
+    width: 100%;
+    height: 850px;
+    background-color: #0059C7;
+}
+
+.our-service-paragraf {
+    margin: 100px 0px 71px 0px;
+}
+
+.our-service-paragraf1 {
+    color: white;
+    padding-top: 60px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px
+}
+
+.our-service-paragraf2 {
+    color: white;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    margin-top: -50px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.our-service-card {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    align-items: center;
+    margin-right: 250px;
+}
+
+.our-service-card1 {
+    grid-area: 1 / 3 / 2 / 4;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    padding: 0px 15px 0px 0px;
+    width: 100%;
+}
+
+.our-service-card2 {
+    grid-area: 1 / 4 / 2 / 5;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    padding: 0px 0px 0px 30px;
+    width: 100%;
+}
+
+.our-service-card3 {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    width: 100%;
+}
+
+.our-service-card4 {
+    grid-area: 2 / 4 / 3 / 5;
+    display: flex;
+    align-items: center;
+    margin-left:50px;
+    padding: 0px 30px 0px 30px;
+    width: 120%;
+}
+
+
+.os-card-paragraf, .os-card-paragraf-2, .os-card-paragraf-3, .os-card-paragraf-4 {
+    margin-top: -20px;
+}
+
+.os-card-paragraf h4, .os-card-paragraf-3 h4 {
+    color: white;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 20px 0px 0px 30px;
+    text-align: left;
+}
+
+.os-card1 img {
+    width: 2rem;
+}
+
+.os-card-paragraf-2 h4, .os-card-paragraf-4 h4 {
+    color: white;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 20px 0px 0px 30px;
+    text-align: left;
+}
+
+.os-card-paragraf p, .os-card-paragraf-2 p, .os-card-paragraf-3 p, .os-card-paragraf-4 p {
+    color: white;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    margin: 0px 0px 0px 30px;
+    text-align: left;
+}
+
+/* Booking Ticket Start */
+.container-booking {
+    width: 100%;
+    height: max-content;
+    margin-bottom: 150px;
+}
+
+.booking-paragraf {
+    margin: 100px 0px 71px 0px;
+}
+
+.booking-paragraf-1 {
+    color: #0059C7;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.booking-paragraf-2 {
+    color: #0059C7;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    margin-top: -50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.booking-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10rem;
+}
+
+.booking-name h2 {
+    color: #1E1E1E;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 120px;
+}
+
+.booking-phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 10rem;
+}
+
+.iti__selected-flag{
+    height: 60px!important;
+}
+
+.booking-phone h2 {
+    color: #1E1E1E;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: -150px;
+}
+
+
+.booking-name input[type=text], .booking-phone input[type=tel]{
+    width: 850px; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    resize: vertical;
+    align-items: left;
+    font-size: 1rem;
+}
+
+.booking-select {
+    display: flex;
+    margin: 0 140px;
+}
+
+.booking-departure, .booking-destination, .booking-date, .booking-passanger  {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.booking-departure select, .booking-destination select, .booking-date input[type=date], .booking-passanger select {
+    font-family: Poppins;
+    font-size: 1.15rem;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+    border: none;
+}
+
+.booking-transportation h2 {
+    color: #1E1E1E;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    margin-left: 10rem;
+}
+
+.booking-transportation p {
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: -20px;
+}
+
+.booking-transportation {
+    text-align: center;
+}
+
+.booking-choose {
+    width: 85%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    column-gap: 4rem;
+    margin-left: 10rem;
+}
+
+.booking-form input{
+    display: block;
+
+}
+
+.booking-form input.error-input {
+    outline: 2px solid red;
+    outline-offset: 2px;
+}
+
+.text-error{
+    display: none;
+    color:red;
+    margin-top: 0.5rem; 
+}
+
+.text-error.show{
+    display: block;
+}
+
+.booking-c1 {
+    background-color: white;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.booking-choose input{
+    position: absolute;
+    opacity: 0;
+}
+
+.booking-choose input:checked + label{
+    outline: 2px solid #0059C7;
+    outline-offset: 3px;
+    background-color: #ddecff;
+}
+
+.booking-choose label{
+    z-index: 20;
+}
+
+.booking-button {
+    width: 85%;
+    height: 62px;
+    border-radius: 10px;
+    background-color: rgb(255, 213, 0);
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 1rem;
+    font-family: Poppins;
+    font-weight: 800;
+}
+
+.booking-button:hover {
+    background-color: rgb(235, 196, 3);
+}
+/* Booking Ticket End */
+
+/* Check Booking Start */
+.cb-container {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 5rem;
+    background-color: #0059C7;
+}
+
+.check-booking-paragraf {
+    margin: 100px 0px 71px 0px;
+}
+
+.check-booking-paragraf1 {
+    color: white;
+    padding-top: 60px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px
+}
+
+.check-booking-paragraf2 {
+    color: white;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    margin-top: -50px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.check-booking-card {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cb-card1, .cb-card2, .cb-card3, .cb-card4 {
+    width: max-content;
+    border-radius: 10px;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+.cb-card1 table, .cb-card2 table, .cb-card3 table, .cb-card4 table{
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Check Booking End */
+
+/* Contact Us Start */
+.container-contact {
+    width: 100%;
+    height: 850px;
+}
+
+
+.contactus-paragraf-1 {
+    color: #0059C7;
+    padding-top: 60px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px
+}
+
+.contactus-paragraf-2 {
+    color: #0059C7;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    margin-top: -50px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contactus-name {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    gap: 60px;
+}
+
+.cu-name-1 input[type=text], .cu-name-2 input[type=text] {
+    width: 504px;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    resize: vertical;
+    align-items: left;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    height: 80px;
+    border: none;
+    font-size: 1rem;
+
+}
+
+.contactus-form textarea {
+    width: 1060px;
+    height: 254px;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    resize: vertical;
+    font-family: Poppins;
+    align-items: left;
+    height: 80px;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    border: none;
+    font-size: 1rem;
+}
+
+.contactus-message {
+    margin-top: 46px;
+    text-align: center;
+}
+
+.cb-button {
+    margin-top: 40px;
+    width: 1060px;
+    height: 62px;
+    border-radius: 5px;
+    border: none;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgb(255, 213, 0);
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+}
+
+.cb-button:hover {
+    background-color: rgb(235, 196, 3);
+}
+
+/* Contact Us End */
+
+/* Reviewer Start */
+.rv-container {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 5rem;
+    background-color: #0059C7;
+}
+
+.rv-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rv-card1 h2 {
+    font-size: 1.5rem;
+}
+
+.rv-card1 h4 {
+    margin-top: -20px;
+    font-weight: 400;
+}
+
+.reviewer-paragraf {
+    margin: 100px 0px 71px 0px;
+}
+
+.reviewer-paragraf1 {
+    color: white;
+    padding-top: 60px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px
+}
+
+.reviewer-paragraf2 {
+    color: white;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    margin-top: -50px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.rv-card1 {
+    width: 20%;
+    padding: 0 20px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--Color, #FFF);
+    text-align: left;
+    box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+}
+
+/* Reviewer End */
+
+.footer {
+    color: var(--Primary-Color, #0059C7);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media screen and (max-width: 655px){
+    .parent-1 .p1-div2 img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .parent-1 .p1-div1 .div1-paragraf3 {
+        font-size: 2.1rem;
+        margin-bottom: 3rem;
+    }
+
+    .parent-1 .p1-div1 .div1-paragraf4 {
+        font-size: 0.8rem;
+    }
+    .parent-1 .div1-button2, .parent-1 .div1-button3 {
+        width: 11rem;
+        height: 50px;
+        margin: 0 5px;
+    }
+
+    .div1-button3 {
+        margin-top: -10px;
+    }
+
+    .parent-2 .p2-div1 img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .parent-2 .p2-div2 .div2-paragraf4 {
+        font-size: 4rem;
+    }
+
+    .parent-2 .p2-div2 .div2-paragraf5 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .parent-2 .div2-parentbutton-2 .div2-button3 {
+        width: 10rem;
+    }
+
+    .parent-2 .div2-parentbutton-2 .div2-button4 {
+        width: 10rem;
+    }
+
+    .container .ourteam-paragraf .ourteam-paragraf-1 {
+        font-size: 2.3rem;
+    }
+
+    .container .ourteam-paragraf .ourteam-paragraf-2 {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .os-container .our-service-paragraf .our-service-paragraf1 {
+        font-size: 3rem;
+    }
+
+    #our-service .os-container {
+        margin: 0;
+    }  
+
+    .os-container .our-service-card1, .os-container .our-service-card2, .os-container .our-service-card3, .os-container .our-service-card4  {
+        display: block;
+    }
+
+    .our-service-card .os-card-1, .our-service-card .os-card-2, .our-service-card .os-card-3, .our-service-card .os-card-4 {
+        text-align: center;
+    }
+
+    .our-service-card .our-service-card1 p , .our-service-card .our-service-card2 p, .our-service-card .our-service-card3 p, .our-service-card .our-service-card4 p{
+        font-size: 0.8rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .our-service-card .our-service-card1 h4 , .our-service-card .our-service-card2 h4, .our-service-card .our-service-card3 h4,  .our-service-card .our-service-card4 h4{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .our-service-card .our-service-card4 h4, .our-service-card .our-service-card4 p {
+        padding-left: 50px;
+    }
+
+    .our-service-card .our-service-card1 h4, .our-service-card .our-service-card1 p{
+        padding-left: 20px;
+    }
+
+    .container-booking .booking-paragraf .booking-paragraf-1 {
+        font-size: 4rem;
+    }
+
+    .booking-form .booking-name, .booking-form .booking-phone {
+        display: block;
+    }
+
+
+    .booking-form .booking-name input[type=text], .booking-form .booking-phone input[type=tel]{
+        width: 90vw; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        resize: vertical;
+        align-items: left;
+    }
+
+    .booking-transportation .booking-choose {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .booking-transportation .booking-choose img {
+        width: 80%;
+    }
+
+    .booking-transportation .booking-choose .booking-c1 h3{
+        margin-top: 5px;
+    }
+
+    #reviewer .rv-container .rv-card .rv-card1 {
+        width: 100%;
+    }
+
+    .contactus-form .cu-name-1, .contactus-form .cu-name-2 {
+        margin-left: -20px;
+    }
+
+    .contactus-form .contactus-message {
+        margin-left: 20px;
+    }
+
+    .footer p {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    .parent-1 .p1-div1 .div1-paragraf3 {
+        line-height: 60px;
+    }
+
+    .our-service-card {
+        margin-left: -50px;
+    }
+
+    .os-card-paragraf h4, .os-card-paragraf-2 h4, .os-card-paragraf-3 h4, .os-card-paragraf-4 h4{
+        font-size: 40px;
+    }
+
+    .booking-form .booking-name h2 {
+        font-size: 20px;
+    }
+
+    .booking-form .booking-phone h2 {
+        font-size: 20px;
+    }
+
+    .booking-form .booking-select {
+        display: flex;
+    }
+
+    .booking-choose {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        margin-left: 0;
+        gap: 1rem;
+    }
+
+    .p1-div1 .div1-paragraf3 {
+        font-size: 58px;
+        line-height: 50px;
+        margin-bottom: 4rem;
+    }
+
+    .div2-parentbutton-2 .div2-button3, .div2-parentbutton-2 .div2-button4 {
+        width: 17rem;
+    }   
+
+    .our-service-card .our-service-card1 p, .our-service-card .our-service-card2 p,.our-service-card .our-service-card3 p, .our-service-card .our-service-card4 p {
+        font-size: 17px;
+    }
+
+    #our-service .os-container {
+        height: max-content;
+        padding-bottom: 5rem;
+    }
+
+    #check-booking .cb-container {
+        height: max-content;
+        padding-bottom: 5rem;
+    }
+
+    #reviewer .rv-container .rv-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .rv-container .rv-card .rv-card1 {
+        width: 40%;
+    }
+
+    .contactus-name {
+        display: block;
+        margin-left: 40px;
+    }
+
+    .cu-name-1 input[type=text], .cu-name-2 input[type=text] {
+        width: 90vw;
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        resize: vertical;
+        align-items: left;
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+        height: 80px;
+        border: none;
+    
+    }
+
+    .contactus-message {
+        margin-left: 40px;
+        text-align: left;
+    }
+
+    .contactus-form textarea {
+        width: 90vw;
+        height: 254px;
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        resize: vertical;
+        font-family: Poppins;
+        align-items: left;
+        height: 80px;
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+        border: none;
+    }
+
+    .cb-button {
+        width: 90vw;
+        /* margin-left: 30px; */
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 1800px) {
+    .logo img {
+        width: 12rem;
+    }
+
+    .p1-div1 .div1-paragraf3{
+        line-height: 120px;
+    }
+
+    .logo {
+        display: flex;
+        padding: 10px 30px 0px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #navbar {
+        width: 100%;
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .navbar ul li a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul.hidden {
+        display: none;
+    }
+
+
+    nav ul {
+        flex-direction: column-reverse;
+        width: 100%;
+    }   
+
+    .navbar-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .parent-1 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 40px auto;
+    }
+
+    .p1-div1 {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .p1-div2 img {
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .div1-paragraf3 {
+        margin-top: -20px;
+        font-size: 90px;
+        text-align: center;
+        line-height: 80px;
+    }
+
+    .div1-paragraf4 {
+        text-align: center;
+        margin-top: -50px;
+        font-size: 20px;
+    }
+
+    .div1-button2, .div1-button3 {
+        width: 19rem;
+    }
+    
+    .parent-2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .p2-div2 {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .p2-div1 img {
+        width: 40rem;
+        height: 40rem;
+    }
+
+    .div2-paragraf4 {
+        margin-top: -20px;
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .div2-paragraf5 {
+        padding: 0px 50px;
+        text-align: center;
+        font-size: 27px;
+    }
+
+    .div2-button3, .div2-button4 {
+        width: 19rem;
+    }
+
+    .ourteam-card {
+        gap: 20px;
+    }
+
+    .our-service-paragraf1 {
+        font-size: 4rem;
+    }
+
+    .os-container {
+        height: max-content;
+        padding-bottom: 5rem;
+        background-color: #0059C7;
+    }
+
+    .our-service-card {
+        margin-left: -50px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .our-service-card1, .our-service-card3 {
+        margin-left: 6rem;
+    }
+
+
+    .our-service-card1 p, .our-service-card2 p, .our-service-card3 p, .our-service-card4 p {
+        font-size: 20px;
+    }
+
+    .our-service-card1 p, .our-service-card1 h4 {
+        margin-left: 45px;
+    }
+
+    .our-service-card4 p, .our-service-card4 h4 {
+        margin-left: 20px;
+    }
+
+    .our-service-card1 h4, .our-service-card2 h4, .our-service-card3 h4, .our-service-card4 h4{
+        font-size: 30px;
+    }
+
+    .container-booking {
+        height: max-content;
+        padding-bottom: 3rem;
+    }
+
+    .booking-paragraf-1 {
+        font-size: 4rem;
+    }
+
+    .booking-paragraf-2 {
+        font-size: 1rem;
+    }
+
+    .booking-name, .booking-phone, .booking-transportation {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+
+    .booking-name h2 {
+        font-size: 30px;
+    }
+
+    .booking-phone h2 {
+        font-size: 30px;
+    }
+
+    .booking-name input[type=text], .booking-phone input[type=tel]{
+        width: 60vw; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        resize: vertical;
+        align-items: left;
+    }
+
+    .booking-select {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        row-gap: 5px;
+        margin-left: -55px;
+    }
+
+    .booking-choose {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        margin-left: 0;
+    }
+
+    .booking-choose img {
+        width: 80%;
+    }
+    
+    .booking-transportation h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .booking-departure h3, .booking-destination h3, .booking-date h3, .booking-passanger h3 {
+        font-size: 25px;
+    }
+
+    .booking-transportation h2 {
+        font-size: 30px;
+    }
+
+    .booking-transportation h2, .booking-transportation p {
+        margin-left: 0px;
+    }
+
+    .booking-button {
+        width: 100%;
+        margin-left: -10px;
+        height: 62px;
+        border-radius: 10px;
+        background: var(--Second-Color, #FFD500);
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: Poppins;
+        font-weight: 800;
+    }
+
+    .booking-select {
+        display: flex;
+        justify-content: start;
+        margin-left: 0px;
+    }
+
+    .cb-container {
+        height: max-content;
+        padding-bottom: 5rem;
+    }
+
+    .contactus-name {
+        display: block;
+        margin-left: 40px;
+    }
+
+    .cu-name-1 input[type=text], .cu-name-2 input[type=text] {
+        width: 90vw;
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        resize: vertical;
+        align-items: left;
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+        height: 80px;
+        border: none;
+    
+    }
+
+    .contactus-message {
+        margin-left: 40px;
+        text-align: left;
+    }
+
+    .contactus-form textarea {
+        width: 90vw;
+        height: 254px;
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        resize: vertical;
+        font-family: Poppins;
+        align-items: left;
+        height: 80px;
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.10);
+        border: none;
+    }
+
+    .cb-button {
+        width: 90vw;
+    }
+
+    .rv-container .rv-card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .rv-card .rv-card1 {
+        width: 30%;
+    }
+    
+}
