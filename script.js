@@ -112,6 +112,7 @@ $(document).on("ready",function(){
                 
             })
             .then(response => response.json())
+            .then(data => {alert(data.message); getBookings();})
             .then(response => { 
                 const attributes = ['name', 'phone_number'];
                 attributes.map((attr) => resetError(document.querySelector(`#${attr}`)));
