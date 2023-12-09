@@ -51,7 +51,7 @@ Di bawah ini dua link untuk menuju ke hasil project final LocalTrans Bali:
 
 ## 💡 Team B - Group 3 - Section Medan
 LocalTrans Bali adalah project yang dibangun dengan konsentrasi dan harapan besar oleh Team B - Group 3 - Section Medan KM AUG23, MSIB ( [RevoU](https://revou.co/) x [MSIB Kemendikbudristek](https://www.kemdikbud.go.id/) ). 
-<br> Berikut tim perancang dan pengembang XGrow:
+<br> Berikut tim perancang dan pengembang LocalTrans Bali:
 
 | Nama                   | Role                      |
 |------------------------|---------------------------|
