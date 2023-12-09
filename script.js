@@ -140,6 +140,8 @@ $(document).on("ready",function(){
             AOS.init();
         });
     }, 1000);
+
+
     getBookings();
     collectCities();
     getReviewers();
@@ -207,15 +209,6 @@ $(document).on("ready",function(){
         }
     }
 
-    async function getReviewers(){
-        try {
-            const reviewers = await getAllReviewers();
-            updateUiReviewers(reviewers);
-        } catch (error) {
-            alert(error.message);
-        }
-    }
-
     function getAllCities(){
         return fetch(`https://be-2-medan-3-production.up.railway.app/cities`)
         .then((response) => {
@@ -227,21 +220,9 @@ $(document).on("ready",function(){
             return Promise.reject(err.message);
         });
     }
-
-        function getAllBookings(){
+    
+    function getAllBookings(){
         return fetch(`https://be-2-medan-3-production.up.railway.app/bookings`)
-        .then((response) => {
-            return response.json();
-        }).then((response)=>{
-            return Promise.resolve(response.data);
-        })
-        .catch((err)=> {
-            return Promise.reject(err.message);
-        });
-    }
-
-    function getAllReviewers(){
-        return fetch(`https://be-2-medan-3-production.up.railway.app/contactus`)
         .then((response) => {
             return response.json();
         }).then((response)=>{
@@ -370,6 +351,27 @@ $(document).on("ready",function(){
             <h3>${transportation.Transportation.types_of_transportation}</h3>
         </label>`;
 
+    }
+
+    async function getReviewers(){
+        try {
+            const reviewers = await getAllReviewers();
+            updateUiReviewers(reviewers);
+        } catch (error) {
+            alert(error.message);
+        }
+    }
+
+    function getAllReviewers(){
+        return fetch(`https://be-2-medan-3-production.up.railway.app/contactus`)
+        .then((response) => {
+            return response.json();
+        }).then((response)=>{
+            return Promise.resolve(response.data);
+        })
+        .catch((err)=> {
+            return Promise.reject(err.message);
+        });
     }
 })
 
